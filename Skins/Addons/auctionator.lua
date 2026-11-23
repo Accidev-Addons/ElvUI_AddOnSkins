@@ -564,6 +564,10 @@ S:AddCallbackForAddon("Auctionator", "Auctionator", function()
 		end
 	end)
 
+	hooksecurefunc(AuctionatorItemKeyCellTemplateMixin, "Init", function(self)
+		S:ApplyElvUIFontForce(self)
+	end)
+
 	hooksecurefunc(Auctionator.ReagentSearch, "InitializeSearchButton", function()
 		S:HandleButton(AuctionatorTradeSkillSearch)
 	end)
