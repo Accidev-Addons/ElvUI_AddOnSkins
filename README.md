@@ -58,6 +58,7 @@ ElvUI_AddOnSkins is a plugin for [ElvUI](https://github.com/ElvUI-WotLK/ElvUI) w
 1. LoseControl
 1. MageNuggets
 1. Mapster
+1. MethodDungeonTools
 1. MoveAnything
 1. Omen
 1. OpenGF

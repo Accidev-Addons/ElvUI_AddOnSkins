@@ -151,6 +151,7 @@ local addonList = {
 	"CharacterNotes",
 	"Immersion",
 	"Bugsworth",
+	"MethodDungeonTools",
 }
 local addonAlias = {
 	["DBM"] = "DBM-Core",

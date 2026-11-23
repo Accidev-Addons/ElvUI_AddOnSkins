@@ -1062,7 +1062,7 @@ AS.libSkins = {
 		func = SkinZFrame
 	},
 	["LibUIDropDownMenu"] = {
-		stub = true,
+		stub = false,
 		func = SkinLDropDownMenu
 	},
 }
