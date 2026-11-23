@@ -6,6 +6,7 @@ if not AS:IsAddonLODorEnabled("MethodDungeonTools") then return end
 
 local _G = _G
 local ipairs = ipairs
+local max = math.max
 
 local function ClearBackdropColor(frame)
 	frame:SetBackdropColor(0, 0, 0, 0)
@@ -20,7 +21,12 @@ end
 
 local function SkinPullButton(widget)
 	local button = widget and widget.frame
-	if not button or button.isSkinned then return end
+	if not button then return end
+
+	if button.isSkinned then
+		button.backdrop:SetFrameLevel(max(button:GetFrameLevel() - 1, 0))
+		return
+	end
 
 	button:CreateBackdrop("Transparent")
 	button.backdrop:SetInside(button, 2, 0)
